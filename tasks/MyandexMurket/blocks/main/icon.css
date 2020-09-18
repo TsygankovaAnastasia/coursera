@@ -1,0 +1,37 @@
+.icon{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background: blue; */
+    z-index:2;
+    background-repeat: no-repeat;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0.7;
+    border: 0;
+}
+
+.icon:nth-of-type(1) {
+    background-image: url(grid.png);
+}
+
+.icon:nth-of-type(2) {
+    background-image: url(list.png);
+}
+
+.icon_position:nth-of-type(1){
+    left: 90%;
+    top: -60px;
+}
+
+.icon_position:nth-of-type(2){
+    left: 93%;
+    top: -60px;
+}
+
+.icon:checked{
+    opacity: 1;
+    border: 0;
+}

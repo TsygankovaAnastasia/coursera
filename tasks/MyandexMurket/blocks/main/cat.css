@@ -1,0 +1,190 @@
+.cat {
+margin:    0.5px auto;
+padding:   10px;
+width:     20%;
+height:    100%;
+font-size: 16pt;
+/* background: blue; */
+border:    1px solid #e6e6e6;
+}
+
+.cat_position {
+position: relative;
+}
+
+.cat__block{
+margin:   0;
+padding:  0;
+width:    100%;
+height:   100%;
+position: relative;
+border:   0;
+/* border: 1px solid grey; */
+}
+
+.cat__img{
+background-repeat: no-repeat;
+width:             100%;
+height:            100%;
+padding:           0;
+/* border: 1px solid red; */
+}
+
+.cat__img_position{
+/* left: 15%; */
+position:   relative;
+display:    inline-block;
+text-align: center;
+}
+
+
+/* name */
+
+.cat__name{
+font-size:       24pt;
+width:           100%;
+margin:          0;
+padding:         0;
+text-decoration: none;
+line-height:     1em;
+overflow:        hidden; /* Обрезаем содержимое */
+text-overflow:   ellipsis; /* Многоточие */
+/* border: 1px solid black; */
+}
+
+
+.cat__name_position{
+position: absolute;
+text-align: center;
+display:    block;
+}
+
+.cat__name:hover{
+color: red;
+}
+
+.cat__img:hover{
+opacity: 0.7;
+}
+
+.cat__img:hover ~ .cat__short-info > .cat__name{
+color: red;
+}
+
+/* category */
+
+.cat__category{
+text-decoration: underline;
+color:           grey;
+font-size:       8pt;
+width:           100%;
+margin:          22pt 0 0 0 ;
+padding:         0;
+line-height:     1em;
+/* border: 1px solid grey; */
+}
+
+.cat__category_position{
+position: relative;
+display:    block;
+text-align: center;
+/* float: right; */
+}
+
+/* old price */
+.cat__price{
+color:       darkRed;
+font-weight: bold;
+}
+
+
+.cat__old-price{
+font-size:       10pt;
+text-decoration: line-through;
+display:         inline;
+}
+
+/* stars */
+
+.cat__stars_position{
+position: relative;
+display:  block;
+margin:   10px 0 10px 0;
+}
+
+/* long-info  */
+
+.cat__long-info_position{
+padding: 10px 0 0 0;
+}
+
+
+/* Grid style  */
+
+input[value='grid']:checked ~ .set > .cat_position{
+display: inline-block;
+}
+
+input[value='grid']:checked ~ .set > .cat >  .cat__img_position{
+display: inline-block;
+}
+
+
+input[value='grid']:checked ~ .set > .cat{
+display:        inline-block;
+vertical-align: top;
+}
+
+input[value='grid']:checked ~ .set > .cat > .cat__img:before{
+content:        '';
+padding:        0;
+margin:         0;
+display:        inline;
+vertical-align: bottom;
+line-height:    210px;
+
+position: relative;
+background: pink;
+}
+
+/* List style  */
+
+
+input[value='list']:checked ~ .set > .cat:before{
+content:        '';
+padding:        0;
+margin:         0;
+display:        inline-block;
+vertical-align: top;
+/* line-height: 210px; */
+
+position: relative;
+background: pink;
+
+}
+/* input[value='list']:checked ~ .set > .cat_position > .cat__img_position{ */
+/*     top: 0; */
+/*     left: 0; */
+/* } */
+
+input[value='list']:checked ~ .set > .cat_position{
+display:         flex;
+justify-content: space-between;
+}
+
+input[value='list']:checked ~ .set > .cat
+{
+width: 100%;
+}
+
+input[value='list']:checked ~ .set > .cat >  .cat__block{
+width:          30%;
+position:       relative;
+display:        inline-block;
+vertical-align: top;
+}
+
+input[value='list']:chEcked ~ .set > .cat >  .cat__short-info > .cat__name,
+input[value='list']:checked ~ .set > .cat >  .cat__short-info > .cat__category {
+text-align: left;
+}
