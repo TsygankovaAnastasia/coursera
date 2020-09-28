@@ -1,11 +1,10 @@
 .product__description{
     width: 100%;
     background-color:white;
-    /* border: 1pt solid grey; */
     position: absolute;
     font-size: 12pt;
     display: none;
-    z-index:2;
+    z-index: 2;
     margin: -10px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
@@ -31,17 +30,12 @@
     right:      0;
     background: rgba(0,0,0,0.8);
 	z-index:    99999;
-	/* -webkit-transition: opacity 400ms ease-in; */
-	/* -moz-transition: opacity 400ms ease-in; */
-	/* transition: opacity 400ms ease-in; */
 	display:    none;
-    /* pointer-events: none; */
 }
 
 
 .modal-dialog:target{
 	display:        block;
-	/* pointer-events: auto; */
 }
 
 

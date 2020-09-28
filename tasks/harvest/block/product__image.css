@@ -1,18 +1,18 @@
 /* image */
 .product__image-list{
-    margin: 0 30px;
+    margin: 0 /* 30px */;
     padding: 0;
-    width: 150px;
+    width: 100%;
     height: 100%;
 }
 
 .product__image-list img{
-    width: 150px;
+    width: 100%;
     height: 100%;
 }
 
 .product__image-description{
-    margin:  0 30px;
+    margin:  0 /* 30px */;
     padding: 0;
 }
 
@@ -32,9 +32,6 @@
 
 
 .product__image_position-list{
-    /* display: inline-block; */
-    /* vertical-align: middle; */
-    /* text-align: center; */
 }
 
 .product__image_position-description{
