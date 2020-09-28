@@ -1,0 +1,66 @@
+.head{
+    height: 100px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0;
+    border: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80pt;
+}
+
+.harvest{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.harvest_position{
+    position: relative;
+}
+
+.harvest__page_position{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+
+}
+
+.harvest__box{
+    width: 890px;
+    height: 200px;
+    padding: 0;
+    margin: 50px auto;
+    border: 0;
+}
+
+.harvest__box:after{
+    content:        '';
+    padding:        0;
+    margin:         0;
+    display:        inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.harvest__box_position{
+    position: relative;
+}
+
+.product{
+    margin: 0;
+    padding: 0;
+}
+
+.product_position{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.harvest__page{
+    display: none;
+}
