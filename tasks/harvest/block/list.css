@@ -99,18 +99,18 @@
     display: inline-block;
 }
 
-.list__page:checked ~ .harvest > .harvest__page > .product:nth-of-type(2),
-.list__page:checked ~ .harvest > .harvest__page > .product:nth-of-type(3),
-.list__page:checked ~ .harvest > .harvest__page > .product:nth-of-type(4){
-    animation-name:     step1;
+
+.list__page:checked ~ .harvest > .harvest__page{
+    animation-name:     step;
     animation-duration: 2s;
 }
 
-@keyframes step1 {
+@keyframes step {
     0% {
-        left: 100%;
+        left: 70%;
+        
     }
     100% {
-        left: 72%;
+        left: 10%;
     }
 }
