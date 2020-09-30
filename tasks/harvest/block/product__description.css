@@ -1,18 +1,18 @@
 .product__description{
-    width: 100%;
-    background-color:white;
-    position: absolute;
-    font-size: 12pt;
-    display: none;
-    z-index: 2;
-    margin: -10px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-    text-align: left;
+    width:            100%;
+    background-color: white;
+    position:         absolute;
+    font-size:        12pt;
+    display:          none;
+    z-index:          102;
+    margin:           -10px;
+    padding:          10px;
+    box-shadow:       0 2px 4px rgba(0, 0, 0, .2);
+    text-align:       left;
 }
 
 .product__description_position{
-    top: 0px;
+    top:  0px;
     left: 0px;    
 }
 
@@ -23,28 +23,50 @@
 
 
 .modal-dialog{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left:       0;
-    right:      0;
-    background: rgba(0,0,0,0.8);
-	z-index:    99999;
-	display:    none;
+    top:            0;
+    bottom:         0;
+    left:           0;
+    right:          0;
+    background:     rgba(0,0,0,0.8);
+	z-index:        99999;
+	display:        none;
+    pointer-events: none;
 }
 
 
 .modal-dialog:target{
-	display:        block;
+    display:        inline-block;
+    position:       fixed;
+    pointer-events: auto;
+}
+
+.modal-dialog__wrapper{
+    height:     100%;
+    width:      100%;
+    display:    inline-block;
+    text-align: center;
 }
 
 
+.modal-dialog__wrapper:before{
+    display:        inline-block;
+    height:         100%;
+    vertical-align: middle;
+    content:        "";
+}
+
+.product__image-view_position,
+.product__image-view_position img{
+    display:        inline;
+    vertical-align: middle;
+}
+
 .close{
-    position: absolute;
-    width: 2%;
-    height: 100%;
+    position:          absolute;
+    width:             2%;
+    height:            100%;
     background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 28 28' style='background:255;' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:white;' d='M0,24l4,4l10-10l10,10l4-4L18,14L28,4l-4-4L14,10L4,0L0,4l10,10L0,24z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image:  url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 28 28' style='background:255;' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:white;' d='M0,24l4,4l10-10l10,10l4-4L18,14L28,4l-4-4L14,10L4,0L0,4l10,10L0,24z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .close_position{
